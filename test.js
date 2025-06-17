@@ -1,6 +1,9 @@
-for (let i = 0; i < 5; i++) {
-  console.log(i);
-}
-let name;
+let ame = 'Gopi';
 
-console.log(name);
+console.log(ame.toUpperCase());
+
+ame()
+
+// function test(){
+
+// }

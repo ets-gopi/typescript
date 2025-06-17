@@ -55,3 +55,23 @@
 - A type just as string or boolean
 - means TS has no idea what this is 
 - Avoid variables with any at all costs.
+
+# Arrays (with types!)
+- TS can do type inference when extracting values from an array.
+- it can prevent us from adding incompatible values to the array.
+- we can get help with map, foreach reduce functions
+- flexible arrays can still contains multiple different types.
+
+# where to use typed arrays ?
+- any time we need to represent a collection of records with some arbotiray sort order.
+
+# tuples in TS
+- array like structure where each element represent some property of a record.
+
+Interfaces + classes = how we  get strong code reuse in TS.
+
+# Interfaces
+- create a new type describing the property names and values types of an object.
+
+# Classes
+- blueprint to create an object with some fields and methods to a represent a thing.
