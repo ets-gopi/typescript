@@ -1,12 +1,20 @@
-class Vehicle {
-  drive(): void {
-    console.log('chugga...chugga');
-  }
+class Point {
+  // fields
+  x: number;
+  y = 0;
+  constructor() {}
 }
 
-const vehicle = new Vehicle();
-vehicle.drive();
-// modifiers
-// public
-// private
-// protected
+const pt = new Point();
+
+// constructor
+// how many ways can class constructor can be initate.
+// A constructor can be initiated in as many ways as you explicitly support, using:
+
+// Overloads
+
+// Default values
+
+// Optional parameters
+
+// Union types

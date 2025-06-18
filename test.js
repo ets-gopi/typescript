@@ -1,9 +1,12 @@
-let ame = 'Gopi';
+// let ame = 'Gopi';
 
-console.log(ame.toUpperCase());
+// console.log(ame.toUpperCase());
 
-ame()
+// ame()
 
 // function test(){
 
 // }
+const a=10;
+a=12
+console.log(a);

@@ -75,3 +75,13 @@ Interfaces + classes = how we  get strong code reuse in TS.
 
 # Classes
 - blueprint to create an object with some fields and methods to a represent a thing.
+# Class Accessors
+
+| Use Case                 | Accessor Role                                            |
+| ------------------------ | -------------------------------------------------------- |
+| Form field validation    | `set` to restrict input (e.g., age ≥ 18)                 |
+| Derived/computed data    | `get` to return totals, summaries, etc.                  |
+| Read-only values         | Use `get` without `set`                                  |
+| Data masking             | `get` returns transformed output (e.g., masked password) |
+| Logging/tracking changes | `set` logs or triggers side effects                      |
+
