@@ -1,14 +1,15 @@
-class MsgError extends Error {
-  constructor(m: string) {
-    super(m);
-  }
-  sayHello() {
-    console.log('hello ' + this.message);
+
+class MsgError<T> {
+  m: T;
+  constructor(m: T) {
+    this.m = m;
   }
 }
-const me = new MsgError('test');
-me.sayHello();
-console.log(me instanceof MsgError);
+const me = new MsgError<string>('test');
+function r(){
+  console.log(this);
+}
+r()
 
 // constructor
 // how many ways can class constructor can be initate.
