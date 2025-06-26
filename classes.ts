@@ -1,4 +1,3 @@
-
 class MsgError<T> {
   m: T;
   constructor(m: T) {
@@ -6,10 +5,34 @@ class MsgError<T> {
   }
 }
 const me = new MsgError<string>('test');
-function r(){
-  console.log(this);
+class A {
+  name = 'thinng';
+  getName(this: A) {
+    console.log(this.name);
+  }
+  getPorps() {
+    return this;
+  }
 }
-r()
+const a = new A();
+const d = {
+  a: 10,
+  b: 20,
+  add: function () {
+    console.log(this);
+  },
+  f: 'def',
+  getName: a.getName
+};
+//console.log(a.getPorps());
+
+// d.getName();
+
+// function df() {
+//   console.log(this); // true in non-strict mode
+// }
+
+// df();
 
 // constructor
 // how many ways can class constructor can be initate.
