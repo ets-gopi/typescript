@@ -15,6 +15,8 @@ class A {
   }
 }
 const a = new A();
+console.log(a);
+
 const d = {
   a: 10,
   b: 20,
